@@ -1,0 +1,78 @@
+{% extends "base.html" %} {% block title %} Home {% endblock %}
+<head>
+
+</head>
+{% block content %}
+<style>
+    body {
+        background-image: url("{{ url_for('static', filename='hackser.gif') }}");  
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+        /* Optional: Set a fallback color in case the GIF doesn't load */
+        background-color: #000000;
+    }
+
+    .home {
+        display: flex;
+        padding: 15rem;
+    }
+
+    .left-side {
+        border-radius: 50%;
+    }
+
+    #hacker_pic {
+        
+        position: relative;
+        width: 20vw;
+        border-radius: 50%;
+
+    }
+
+    .right-side {
+        padding: 7rem ;
+    }
+
+    .right-side h3 {
+        font-size: 300%;
+        font-weight: 800;
+        font-family: monospace;
+        color: yellow;
+    }
+
+    .right-side h4 {
+        font-size: 200%;
+        font-weight: 800;
+        font-family: monospace;
+        color: darkorange;
+    }
+
+    .right-side p {
+        font-size: 100%;
+        font-weight: 800;
+        font-family: monospace;
+        color: gold;
+    }
+
+
+
+
+</style>
+<body>
+    <div class="home">
+        <div class="left-side">
+            <img src="{{ url_for('static', filename='hacker_pic.png') }}" alt="hacker_pic" id="hacker_pic">
+        </div>
+
+        <div class="right-side">
+            <h3> WELCOME! </h3> <br>
+            <h4> This is a attack simulation </h4> <br>
+            <p> This system will simulate a man-in-the-middle</p>
+            <p> attack for the sake of visualizing decryption</p>
+            <p> in a more entertaining way.</p>
+        </div>
+    </div>
+
+</body>
+{% endblock %}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CLI MWEHEHEHE</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+        p {
+            color: yellow;
+            font-family: monospace;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    
+
+    <p>Microsoft Windows [Version 10.0.26200.7171]</p>
+    <p>(c) Microsoft Corporation. All rights reserved.</p>
+    <br>
+{% for row in accounts %}
+    <p>C:\User\Admin> Email: {{row[1]}}</p>
+    <p>C:\User\Admin> Password: {{row[4]}}</p>
+    <br>
+{% endfor %}
+</body>
+</html>
