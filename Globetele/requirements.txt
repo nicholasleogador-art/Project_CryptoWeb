@@ -3,5 +3,4 @@ pandas
 numpy
 plotly
 seaborn
-textwrap
 # add any other library you used
