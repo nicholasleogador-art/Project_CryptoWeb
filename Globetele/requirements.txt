@@ -3,6 +3,5 @@ pandas
 numpy
 plotly
 seaborn
-warnings
 textwrap
 # add any other library you used
