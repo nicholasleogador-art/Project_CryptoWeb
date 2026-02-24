@@ -2,4 +2,7 @@ streamlit
 pandas
 numpy
 poltly
+seaborn
+warnings
+textwrap
 # add any other library you used
