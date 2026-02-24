@@ -1,7 +1,7 @@
 streamlit
 pandas
 numpy
-poltly
+plotly
 seaborn
 warnings
 textwrap
